@@ -10,6 +10,9 @@ function soloNumeros(array) {
   // Ej:
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
   // Tu código aca:
+  return array.filter(function (element) {
+    if (!isNaN(element)) return element;
+  });
 }
 
 // No modifiques nada debajo de esta linea //
